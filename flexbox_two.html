@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity One</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            gap: 8px;
+        }
+
+        aside,
+        nav,
+        main,
+        footer {
+            border: 1px solid black;
+        }
+
+        aside {
+            width: 25vw;
+        }
+
+        nav,
+        footer {
+            height: 8vh;
+        }
+
+        main {
+            height: 84vh;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            width: 75vw;
+            gap: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>ASIDE</aside>
+    <div class="content">
+        <nav>NAV</nav>
+        <main>MAIN</main>
+        <footer>FOOTER</footer>
+    </div>
+</body>
+
+</html>

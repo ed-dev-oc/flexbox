@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Activity Two</title>
+
+	<style>
+		* {
+			margin: 0px;
+			padding: 0px;
+		}
+
+		body {
+			height: calc(100vh - 8px);
+		}
+
+		.root {
+			height: 100%;
+			display: flex;
+			gap: 8px;
+			padding: 4px;
+		}
+
+		aside, nav, main, footer {
+			border: 1px solid black;
+		}
+
+		aside {
+			width: 25vw;
+			display: flex;
+			flex-direction: column;
+			padding: 4px;
+			gap: 8px;
+			overflow: auto;
+		}
+
+		.asideItem {
+			border: 1px solid black;
+			padding: 4px;
+			height: 30px;
+		}
+
+		nav, footer {
+			height: auto;
+		}
+
+		nav {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+			padding: 4px;
+		}
+
+		footer {
+			padding: 4px;
+		}
+
+		main {
+			flex-grow: 1;
+			display: flex;
+			flex-wrap: wrap;
+			align-content: flex-start;
+			gap: 8px;
+			padding: 4px;
+		}
+
+		.mainItem {
+			border: 1px solid black;
+			height: 80px;
+			width: 80px;
+			padding: 2px;
+		}
+
+		.content {
+			display: flex;
+			flex-direction: column;
+			width: 75vw;
+			gap: 8px;
+			overflow: auto;
+		}
+
+		.redBox {
+			width: 40px;
+			height: 40px;
+			background-color: red;
+		}
+
+		.links {
+			display: flex;
+			gap: 4px;
+			justify-content: center;
+		}
+
+		.link {
+			width: 20px;
+			height: 20px;
+			background-color: red;
+		}
+
+		.copyright {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="root">
+		<aside>
+			<div class="asideItem">1</div>
+			<div class="asideItem">2</div>
+			<div class="asideItem">3</div>
+			<div class="asideItem">4</div>
+			<div class="asideItem">5</div>
+			<div class="asideItem">6</div>
+			<div class="asideItem">7</div>
+			<div class="asideItem">8</div>
+			<div class="asideItem">9</div>
+			<div class="asideItem">10</div>
+		</aside>
+		<div class="content">
+			<nav>
+				<div class="redBox"></div>
+				<div class="title">
+					FLEXBOX
+				</div>
+			</nav>
+			<main>
+				<div class="mainItem">1</div>
+				<div class="mainItem">2</div>
+				<div class="mainItem">3</div>
+				<div class="mainItem">4</div>
+				<div class="mainItem">5</div>
+				<div class="mainItem">6</div>
+				<div class="mainItem">7</div>
+				<div class="mainItem">8</div>
+				<div class="mainItem">9</div>
+				<div class="mainItem">10</div>
+				<div class="mainItem">11</div>
+				<div class="mainItem">12</div>
+				<div class="mainItem">13</div>
+				<div class="mainItem">14</div>
+				<div class="mainItem">15</div>
+				<div class="mainItem">16</div>
+				<div class="mainItem">17</div>
+				<div class="mainItem">18</div>
+				<div class="mainItem">19</div>
+				<div class="mainItem">20</div>
+			</main>
+			<footer>
+				<div class="links">
+					<div class="link"></div>
+					<div class="link"></div>
+					<div class="link"></div>
+					<div class="link"></div>
+					<div class="link"></div>
+				</div>
+				<div class="copyright">©Copyright All rights reserved.</div>
+			</footer>
+		</div>
+	</div>
+</body>
+
+</html>

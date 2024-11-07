@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            height: calc(100vh - 8px);
+            padding: 4px;
+        }
+
+        nav, main, aside, footer {
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        .container {
+            display: flex;
+            gap: 5px;
+            flex-grow: 1;
+        }
+
+        main {
+            flex-grow: 1;
+        }
+
+        aside {
+            width: 25vw;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .box {
+            height: 40px;
+            width: 40px;
+            background-color: red;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 5px;
+        }
+
+        .item {
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .asideItem {
+            border: 1px solid black;
+            height: 20px;
+        }
+
+        .smallBox {
+            height: 20px;
+            width: 20px;
+            background-color: red;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .boxes {
+            display: flex;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="box"></div>
+        <div>FLEXBOX</div>
+    </nav>
+    <div class="container">
+        <main>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </main>
+        <aside>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+            <div class="asideItem"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="boxes">
+            <div class="smallBox"></div>
+            <div class="smallBox"></div>
+            <div class="smallBox"></div>
+            <div class="smallBox"></div>
+            <div class="smallBox"></div>
+        </div>
+        <div>©Copyright All rights reserved.</div>
+    </footer>
+</body>
+</html>
